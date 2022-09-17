@@ -7,6 +7,7 @@ const posthtml = require('posthtml')
 const include = require('posthtml-include')
 
 let LocalFolderPath = "src\\posthtml";
+
 let LocalDestinationPath = "public\\JSONProject\\Html";
 
 var walk = function (dir, done) {
