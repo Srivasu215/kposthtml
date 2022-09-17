@@ -6,7 +6,7 @@ const { readFileSync, fstat, writeFileSync } = require('fs')
 const posthtml = require('posthtml')
 const include = require('posthtml-include')
 
-let LocalFolderPath = "src\\posthtml";
+let LocalFolderPath = "src/posthtml";
 let LocalDestinationPath = "public\\JSONProject\\Html";
 
 var walk = function (dir, done) {
@@ -38,7 +38,6 @@ walk(LocalFolderPath, function (err, results) {
 
     results.forEach(element => {
         const html = readFileSync(element);
-        //console.log("html : ", html);
 
         posthtml([include({ encoding: 'utf8' })])
             .process(html)
