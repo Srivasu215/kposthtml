@@ -10,6 +10,7 @@ let LocalFolderPath = "src\\posthtml";
 
 let LocalDestinationPath = "public\\JSONProject\\Html";
 
+
 var walk = function (dir, done) {
     var results = [];
     fs.readdir(dir, function (err, list) {
